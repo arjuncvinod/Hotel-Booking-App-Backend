@@ -1,0 +1,1234 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.api\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\hotel\\queries\\getavailablerooms\\getavailableroomsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\dtos\\availableroomsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64776CDC-2055-4ED8-9CBE-6AB65F657E49}|..\\Hotel.Infrastructure\\Hotel.Infrastructure.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.infrastructure\\data\\hoteldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.api\\middlewares\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|solutionrelative:middlewares\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\auth\\revoke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\auth\\refresh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\auth\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BAB72-ED2C-4B31-A090-7CA1699C2799}|..\\Hotel.Domain\\Hotel.Domain.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.domain\\enums\\bookingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BAB72-ED2C-4B31-A090-7CA1699C2799}|..\\Hotel.Domain\\Hotel.Domain.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.domain\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BAB72-ED2C-4B31-A090-7CA1699C2799}|..\\Hotel.Domain\\Hotel.Domain.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.domain\\entities\\roomtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.api\\controllers\\hotelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|solutionrelative:controllers\\hotelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\hotel\\queries\\getavailablerooms\\getavailabelroomsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\dtos\\hoteldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BAB72-ED2C-4B31-A090-7CA1699C2799}|..\\Hotel.Domain\\Hotel.Domain.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.domain\\enums\\availableroomssortby.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\dtos\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BAB72-ED2C-4B31-A090-7CA1699C2799}|..\\Hotel.Domain\\Hotel.Domain.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.domain\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BAB72-ED2C-4B31-A090-7CA1699C2799}|..\\Hotel.Domain\\Hotel.Domain.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.domain\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BAB72-ED2C-4B31-A090-7CA1699C2799}|..\\Hotel.Domain\\Hotel.Domain.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.domain\\entities\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\hotel\\queries\\gethotelbyid\\gethotelbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BAB72-ED2C-4B31-A090-7CA1699C2799}|..\\Hotel.Domain\\Hotel.Domain.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.domain\\enums\\roomstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BAB72-ED2C-4B31-A090-7CA1699C2799}|..\\Hotel.Domain\\Hotel.Domain.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.domain\\enums\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\dtos\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\hotel\\queries\\gethotels\\gethotelsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\dtos\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\hotel.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Infrastructure\\Migrations\\20251111060926_employeeupdated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BAB72-ED2C-4B31-A090-7CA1699C2799}|..\\Hotel.Domain\\Hotel.Domain.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\customer\\queries\\getcustomers\\getcustomersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\customer\\queries\\getcustomers\\getcustomersquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BAB72-ED2C-4B31-A090-7CA1699C2799}|..\\Hotel.Domain\\Hotel.Domain.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\customer\\commands\\createcustomer\\createcustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\customer\\commands\\createcustomer\\createcustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\customer\\queries\\getcustomersbyid\\getcustomerbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\dtos\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.api\\controllers\\roomtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|solutionrelative:controllers\\roomtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\roomtype\\queries\\getroomtypebyid\\getroombyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\dtos\\roomtypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\roomtype\\queries\\getroomtypebyid\\getroomtypebyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\roomtype\\command\\createroomtype\\createroomtypecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\roomtype\\command\\createroomtype\\createroomtypecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\employee\\queries\\getemployeebyid\\getemployeebyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\employee\\queries\\getemployeebyid\\getemployeebyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\employee\\command\\createemployee\\createemployeecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\employee\\command\\deleteemployee\\deleteemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\employee\\command\\createemployee\\createemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\employee\\command\\deleteemployee\\deleteemployeecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\employee\\command\\updateemployee\\updateemployeecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\employee\\command\\updateemployee\\updateemployeecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\hotel\\commands\\updatehotel\\updatehotelcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\dtos\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\hotel\\commands\\updatehotel\\updatehotelcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\employee\\queries\\getemployees\\getemployeesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\employee\\queries\\getemployees\\getemployeesquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\hotel\\deletehotel\\deletehotelcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.api\\hotel.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7121D68A-3455-4C57-819A-0F01B1837B78}|Hotel.API.csproj|solutionrelative:hotel.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\hotel\\deletehotel\\deletehotelcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\customer\\commands\\updatecustomer\\updatecustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\customer\\commands\\updatecustomer\\updatecustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\hotel\\queries\\gethotels\\gethotelsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\customer\\commands\\deletecustomer\\deletecustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\customer\\commands\\deletecustomer\\deletecustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\hotel\\queries\\gethotelbyid\\gethotelbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\customer\\queries\\getcustomersbyid\\getcustomerbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\hotel\\commands\\createhotel\\createhotelcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F144963-A0E9-4DB1-9246-ACCCA4C3B883}|..\\Hotel.Application\\Hotel.Application.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.application\\hotel\\commands\\createhotel\\createhotelcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64776CDC-2055-4ED8-9CBE-6AB65F657E49}|..\\Hotel.Infrastructure\\Hotel.Infrastructure.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.infrastructure\\hotel.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BAB72-ED2C-4B31-A090-7CA1699C2799}|..\\Hotel.Domain\\Hotel.Domain.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.domain\\hotel.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BAB72-ED2C-4B31-A090-7CA1699C2799}|..\\Hotel.Domain\\Hotel.Domain.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.domain\\enums\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64776CDC-2055-4ED8-9CBE-6AB65F657E49}|..\\Hotel.Infrastructure\\Hotel.Infrastructure.csproj|c:\\users\\arjun.c\\source\\repos\\hotel-cqrs\\hotel.infrastructure\\migrations\\20251105060707_intial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Refresh.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Auth\\Refresh.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Auth\\Refresh.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Auth\\Refresh.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Auth\\Refresh.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowBgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T06:45:18.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T06:45:18.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Revoke.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Auth\\Revoke.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Auth\\Revoke.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Auth\\Revoke.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Auth\\Revoke.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T10:15:10.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HotelDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Infrastructure\\Data\\HotelDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Infrastructure\\Data\\HotelDbContext.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Infrastructure\\Data\\HotelDbContext.cs",
+              "RelativeToolTip": "..\\Hotel.Infrastructure\\Data\\HotelDbContext.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwB8AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:46:09.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AvailableRoomsDto.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\AvailableRoomsDto.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\DTOs\\AvailableRoomsDto.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\AvailableRoomsDto.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\DTOs\\AvailableRoomsDto.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T04:29:57.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetAvailableRoomsQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Queries\\GetAvailableRooms\\GetAvailableRoomsQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Hotel\\Queries\\GetAvailableRooms\\GetAvailableRoomsQueryHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Queries\\GetAvailableRooms\\GetAvailableRoomsQueryHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Hotel\\Queries\\GetAvailableRooms\\GetAvailableRoomsQueryHandler.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAYwHAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T04:35:33.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "Controllers\\BookingController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T06:50:14.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Auth\\Login.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Auth\\Login.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Auth\\Login.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Auth\\Login.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwCgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T06:11:19.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T06:48:33.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookingStatus.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Enums\\BookingStatus.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Domain\\Enums\\BookingStatus.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Enums\\BookingStatus.cs",
+              "RelativeToolTip": "..\\Hotel.Domain\\Enums\\BookingStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:43:52.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Entities\\Booking.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Domain\\Entities\\Booking.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Entities\\Booking.cs",
+              "RelativeToolTip": "..\\Hotel.Domain\\Entities\\Booking.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:41:43.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GlobalExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Middlewares\\GlobalExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "Middlewares\\GlobalExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Middlewares\\GlobalExceptionMiddleware.cs",
+              "RelativeToolTip": "Middlewares\\GlobalExceptionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T09:57:05.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RoomType.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Entities\\RoomType.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Domain\\Entities\\RoomType.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Entities\\RoomType.cs",
+              "RelativeToolTip": "..\\Hotel.Domain\\Entities\\RoomType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T13:18:54.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HotelController.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Controllers\\HotelController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HotelController.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Controllers\\HotelController.cs",
+              "RelativeToolTip": "Controllers\\HotelController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAWwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T04:36:05.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetAvailabelRoomsQuery.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Queries\\GetAvailableRooms\\GetAvailabelRoomsQuery.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Hotel\\Queries\\GetAvailableRooms\\GetAvailabelRoomsQuery.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Queries\\GetAvailableRooms\\GetAvailabelRoomsQuery.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Hotel\\Queries\\GetAvailableRooms\\GetAvailabelRoomsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T04:32:53.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-11T06:56:53.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HotelDto.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\HotelDto.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\DTOs\\HotelDto.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\HotelDto.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\DTOs\\HotelDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T05:11:18.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Entities\\Room.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Domain\\Entities\\Room.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Entities\\Room.cs",
+              "RelativeToolTip": "..\\Hotel.Domain\\Entities\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T13:18:59.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Hotel.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Entities\\Hotel.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Domain\\Entities\\Hotel.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Entities\\Hotel.cs",
+              "RelativeToolTip": "..\\Hotel.Domain\\Entities\\Hotel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:43:36.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Review.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Entities\\Review.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Domain\\Entities\\Review.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Entities\\Review.cs",
+              "RelativeToolTip": "..\\Hotel.Domain\\Entities\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T05:35:52.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AvailableRoomsSortBy.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Enums\\AvailableRoomsSortBy.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Domain\\Enums\\AvailableRoomsSortBy.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Enums\\AvailableRoomsSortBy.cs",
+              "RelativeToolTip": "..\\Hotel.Domain\\Enums\\AvailableRoomsSortBy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T06:59:05.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ReviewDto.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\ReviewDto.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\DTOs\\ReviewDto.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\ReviewDto.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\DTOs\\ReviewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T05:38:23.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GetHotelByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Queries\\GetHotelById\\GetHotelByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Hotel\\Queries\\GetHotelById\\GetHotelByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Queries\\GetHotelById\\GetHotelByIdQueryHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Hotel\\Queries\\GetHotelById\\GetHotelByIdQueryHandler.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwCcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T05:58:56.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RoomStatus.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Enums\\RoomStatus.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Domain\\Enums\\RoomStatus.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Enums\\RoomStatus.cs",
+              "RelativeToolTip": "..\\Hotel.Domain\\Enums\\RoomStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:43:56.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PaymentStatus.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Enums\\PaymentStatus.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Domain\\Enums\\PaymentStatus.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Enums\\PaymentStatus.cs",
+              "RelativeToolTip": "..\\Hotel.Domain\\Enums\\PaymentStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:43:55.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RoomDto.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\RoomDto.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\DTOs\\RoomDto.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\RoomDto.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\DTOs\\RoomDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T05:50:28.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GetHotelsQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Queries\\GetHotels\\GetHotelsQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Hotel\\Queries\\GetHotels\\GetHotelsQueryHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Queries\\GetHotels\\GetHotelsQueryHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Hotel\\Queries\\GetHotels\\GetHotelsQueryHandler.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T06:30:32.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BookingDto.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\BookingDto.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\DTOs\\BookingDto.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\BookingDto.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\DTOs\\BookingDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T04:30:33.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20251111060926_employeeupdated.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Infrastructure\\Migrations\\20251111060926_employeeupdated.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Infrastructure\\Migrations\\20251111060926_employeeupdated.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Infrastructure\\Migrations\\20251111060926_employeeupdated.cs",
+              "RelativeToolTip": "..\\Hotel.Infrastructure\\Migrations\\20251111060926_employeeupdated.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwD4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T06:09:26.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "GetCustomersQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Queries\\GetCustomers\\GetCustomersQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Customer\\Queries\\GetCustomers\\GetCustomersQueryHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Queries\\GetCustomers\\GetCustomersQueryHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Customer\\Queries\\GetCustomers\\GetCustomersQueryHandler.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwCAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T07:48:50.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Hotel.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel.Application.csproj",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Hotel.Application.csproj",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel.Application.csproj",
+              "RelativeToolTip": "..\\Hotel.Application\\Hotel.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-05T05:28:35.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "GetCustomersQuery.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Queries\\GetCustomers\\GetCustomersQuery.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Customer\\Queries\\GetCustomers\\GetCustomersQuery.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Queries\\GetCustomers\\GetCustomersQuery.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Customer\\Queries\\GetCustomers\\GetCustomersQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T07:47:50.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Domain\\Entities\\Customer.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Entities\\Customer.cs",
+              "RelativeToolTip": "..\\Hotel.Domain\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:34:29.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Domain\\Entities\\Employee.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Entities\\Employee.cs",
+              "RelativeToolTip": "..\\Hotel.Domain\\Entities\\Employee.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:42:53.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CreateCustomerCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Commands\\CreateCustomer\\CreateCustomerCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Customer\\Commands\\CreateCustomer\\CreateCustomerCommandHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Commands\\CreateCustomer\\CreateCustomerCommandHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Customer\\Commands\\CreateCustomer\\CreateCustomerCommandHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwBkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T06:24:51.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CreateCustomerCommand.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Commands\\CreateCustomer\\CreateCustomerCommand.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Customer\\Commands\\CreateCustomer\\CreateCustomerCommand.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Commands\\CreateCustomer\\CreateCustomerCommand.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Customer\\Commands\\CreateCustomer\\CreateCustomerCommand.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAD4vxQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T06:21:37.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "GetCustomerByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Queries\\GetCustomersById\\GetCustomerByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Customer\\Queries\\GetCustomersById\\GetCustomerByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Queries\\GetCustomersById\\GetCustomerByIdQueryHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Customer\\Queries\\GetCustomersById\\GetCustomerByIdQueryHandler.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAIAywCIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T08:22:31.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CustomerDto.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\CustomerDto.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\DTOs\\CustomerDto.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\CustomerDto.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\DTOs\\CustomerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T06:15:33.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "RoomTypeDto.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\RoomTypeDto.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\DTOs\\RoomTypeDto.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\RoomTypeDto.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\DTOs\\RoomTypeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T13:11:04.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "RoomTypeController.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Controllers\\RoomTypeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoomTypeController.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Controllers\\RoomTypeController.cs",
+              "RelativeToolTip": "Controllers\\RoomTypeController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA6wDYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T13:22:32.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "GetRoomTypeByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\RoomType\\Queries\\GetRoomTypeById\\GetRoomTypeByIdQuery.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\RoomType\\Queries\\GetRoomTypeById\\GetRoomTypeByIdQuery.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\RoomType\\Queries\\GetRoomTypeById\\GetRoomTypeByIdQuery.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\RoomType\\Queries\\GetRoomTypeById\\GetRoomTypeByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T13:27:27.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "GetRoomByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\RoomType\\Queries\\GetRoomTypeById\\GetRoomByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\RoomType\\Queries\\GetRoomTypeById\\GetRoomByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\RoomType\\Queries\\GetRoomTypeById\\GetRoomByIdQueryHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\RoomType\\Queries\\GetRoomTypeById\\GetRoomByIdQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwCIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T13:30:26.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CreateRoomTypeCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\RoomType\\Command\\CreateRoomType\\CreateRoomTypeCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\RoomType\\Command\\CreateRoomType\\CreateRoomTypeCommandHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\RoomType\\Command\\CreateRoomType\\CreateRoomTypeCommandHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\RoomType\\Command\\CreateRoomType\\CreateRoomTypeCommandHandler.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T13:17:13.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "CreateRoomTypeCommand.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\RoomType\\Command\\CreateRoomType\\CreateRoomTypeCommand.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\RoomType\\Command\\CreateRoomType\\CreateRoomTypeCommand.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\RoomType\\Command\\CreateRoomType\\CreateRoomTypeCommand.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\RoomType\\Command\\CreateRoomType\\CreateRoomTypeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T13:14:19.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "CreateEmployeeCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Command\\CreateEmployee\\CreateEmployeeCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Employee\\Command\\CreateEmployee\\CreateEmployeeCommandHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Command\\CreateEmployee\\CreateEmployeeCommandHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Employee\\Command\\CreateEmployee\\CreateEmployeeCommandHandler.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAmwCcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T10:38:42.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "DeleteEmployeeCommand.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Command\\DeleteEmployee\\DeleteEmployeeCommand.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Employee\\Command\\DeleteEmployee\\DeleteEmployeeCommand.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Command\\DeleteEmployee\\DeleteEmployeeCommand.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Employee\\Command\\DeleteEmployee\\DeleteEmployeeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T12:46:12.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "GetEmployeeByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Queries\\GetEmployeeById\\GetEmployeeByIdQuery.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Employee\\Queries\\GetEmployeeById\\GetEmployeeByIdQuery.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Queries\\GetEmployeeById\\GetEmployeeByIdQuery.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Employee\\Queries\\GetEmployeeById\\GetEmployeeByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T11:25:38.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "CreateEmployeeCommand.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Command\\CreateEmployee\\CreateEmployeeCommand.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Employee\\Command\\CreateEmployee\\CreateEmployeeCommand.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Command\\CreateEmployee\\CreateEmployeeCommand.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Employee\\Command\\CreateEmployee\\CreateEmployeeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T10:36:22.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "GetEmployeeByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Queries\\GetEmployeeById\\GetEmployeeByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Employee\\Queries\\GetEmployeeById\\GetEmployeeByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Queries\\GetEmployeeById\\GetEmployeeByIdQueryHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Employee\\Queries\\GetEmployeeById\\GetEmployeeByIdQueryHandler.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T11:28:03.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAiwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T10:31:23.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "DeleteEmployeeCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Command\\DeleteEmployee\\DeleteEmployeeCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Employee\\Command\\DeleteEmployee\\DeleteEmployeeCommandHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Command\\DeleteEmployee\\DeleteEmployeeCommandHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Employee\\Command\\DeleteEmployee\\DeleteEmployeeCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T12:50:52.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "EmployeeDto.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\EmployeeDto.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\DTOs\\EmployeeDto.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\DTOs\\EmployeeDto.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\DTOs\\EmployeeDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T10:37:08.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "UpdateEmployeeCommand.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Command\\UpdateEmployee\\UpdateEmployeeCommand.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Employee\\Command\\UpdateEmployee\\UpdateEmployeeCommand.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Command\\UpdateEmployee\\UpdateEmployeeCommand.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Employee\\Command\\UpdateEmployee\\UpdateEmployeeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T12:16:02.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "UpdateHotelCommand.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Commands\\UpdateHotel\\UpdateHotelCommand.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Hotel\\Commands\\UpdateHotel\\UpdateHotelCommand.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Commands\\UpdateHotel\\UpdateHotelCommand.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Hotel\\Commands\\UpdateHotel\\UpdateHotelCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T08:14:37.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "UpdateEmployeeCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Command\\UpdateEmployee\\UpdateEmployeeCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Employee\\Command\\UpdateEmployee\\UpdateEmployeeCommandHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Command\\UpdateEmployee\\UpdateEmployeeCommandHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Employee\\Command\\UpdateEmployee\\UpdateEmployeeCommandHandler.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwCkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T12:18:21.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "UpdateHotelCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Commands\\UpdateHotel\\UpdateHotelCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Hotel\\Commands\\UpdateHotel\\UpdateHotelCommandHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Commands\\UpdateHotel\\UpdateHotelCommandHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Hotel\\Commands\\UpdateHotel\\UpdateHotelCommandHandler.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAIwDUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T08:04:46.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "GetEmployeesQuery.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Queries\\GetEmployees\\GetEmployeesQuery.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Employee\\Queries\\GetEmployees\\GetEmployeesQuery.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Queries\\GetEmployees\\GetEmployeesQuery.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Employee\\Queries\\GetEmployees\\GetEmployeesQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T11:52:14.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "GetEmployeesQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Queries\\GetEmployees\\GetEmployeesQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Employee\\Queries\\GetEmployees\\GetEmployeesQueryHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Employee\\Queries\\GetEmployees\\GetEmployeesQueryHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Employee\\Queries\\GetEmployees\\GetEmployeesQueryHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwB8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T11:53:10.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwEcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T06:35:51.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "DeleteHotelCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\DeleteHotel\\DeleteHotelCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Hotel\\DeleteHotel\\DeleteHotelCommandHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\DeleteHotel\\DeleteHotelCommandHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Hotel\\DeleteHotel\\DeleteHotelCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T09:34:46.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "UpdateCustomerCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Commands\\UpdateCustomer\\UpdateCustomerCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Customer\\Commands\\UpdateCustomer\\UpdateCustomerCommandHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Commands\\UpdateCustomer\\UpdateCustomerCommandHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Customer\\Commands\\UpdateCustomer\\UpdateCustomerCommandHandler.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T10:42:19.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "DeleteHotelCommand.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\DeleteHotel\\DeleteHotelCommand.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Hotel\\DeleteHotel\\DeleteHotelCommand.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\DeleteHotel\\DeleteHotelCommand.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Hotel\\DeleteHotel\\DeleteHotelCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T09:32:08.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Hotel.API.csproj",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Hotel.API.csproj",
+              "RelativeDocumentMoniker": "Hotel.API.csproj",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.API\\Hotel.API.csproj",
+              "RelativeToolTip": "Hotel.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-05T05:28:49.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "UpdateCustomerCommand.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Commands\\UpdateCustomer\\UpdateCustomerCommand.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Customer\\Commands\\UpdateCustomer\\UpdateCustomerCommand.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Commands\\UpdateCustomer\\UpdateCustomerCommand.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Customer\\Commands\\UpdateCustomer\\UpdateCustomerCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T10:40:44.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "GetHotelsQuery.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Queries\\GetHotels\\GetHotelsQuery.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Hotel\\Queries\\GetHotels\\GetHotelsQuery.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Queries\\GetHotels\\GetHotelsQuery.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Hotel\\Queries\\GetHotels\\GetHotelsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T06:24:41.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "DeleteCustomerCommand.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Commands\\DeleteCustomer\\DeleteCustomerCommand.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Customer\\Commands\\DeleteCustomer\\DeleteCustomerCommand.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Commands\\DeleteCustomer\\DeleteCustomerCommand.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Customer\\Commands\\DeleteCustomer\\DeleteCustomerCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T12:11:49.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "DeleteCustomerCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Commands\\DeleteCustomer\\DeleteCustomerCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Customer\\Commands\\DeleteCustomer\\DeleteCustomerCommandHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Commands\\DeleteCustomer\\DeleteCustomerCommandHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Customer\\Commands\\DeleteCustomer\\DeleteCustomerCommandHandler.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwBwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T12:20:22.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "GetHotelByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Queries\\GetHotelById\\GetHotelByIdQuery.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Hotel\\Queries\\GetHotelById\\GetHotelByIdQuery.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Queries\\GetHotelById\\GetHotelByIdQuery.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Hotel\\Queries\\GetHotelById\\GetHotelByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T05:55:44.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "GetCustomerByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Queries\\GetCustomersById\\GetCustomerByIdQuery.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Customer\\Queries\\GetCustomersById\\GetCustomerByIdQuery.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Customer\\Queries\\GetCustomersById\\GetCustomerByIdQuery.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Customer\\Queries\\GetCustomersById\\GetCustomerByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T08:17:00.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "CreateHotelCommand.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Commands\\CreateHotel\\CreateHotelCommand.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Hotel\\Commands\\CreateHotel\\CreateHotelCommand.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Commands\\CreateHotel\\CreateHotelCommand.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Hotel\\Commands\\CreateHotel\\CreateHotelCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T05:10:38.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "CreateHotelCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Commands\\CreateHotel\\CreateHotelCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Application\\Hotel\\Commands\\CreateHotel\\CreateHotelCommandHandler.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Application\\Hotel\\Commands\\CreateHotel\\CreateHotelCommandHandler.cs",
+              "RelativeToolTip": "..\\Hotel.Application\\Hotel\\Commands\\CreateHotel\\CreateHotelCommandHandler.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAvwC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T05:15:03.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "20251105060707_intial.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Infrastructure\\Migrations\\20251105060707_intial.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Infrastructure\\Migrations\\20251105060707_intial.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Infrastructure\\Migrations\\20251105060707_intial.cs",
+              "RelativeToolTip": "..\\Hotel.Infrastructure\\Migrations\\20251105060707_intial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T06:07:07.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "PaymentMethod.cs",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Enums\\PaymentMethod.cs",
+              "RelativeDocumentMoniker": "..\\Hotel.Domain\\Enums\\PaymentMethod.cs",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Enums\\PaymentMethod.cs",
+              "RelativeToolTip": "..\\Hotel.Domain\\Enums\\PaymentMethod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T05:43:54.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Hotel.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Infrastructure\\Hotel.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "..\\Hotel.Infrastructure\\Hotel.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Infrastructure\\Hotel.Infrastructure.csproj",
+              "RelativeToolTip": "..\\Hotel.Infrastructure\\Hotel.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-05T05:28:01.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Hotel.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Hotel.Domain.csproj",
+              "RelativeDocumentMoniker": "..\\Hotel.Domain\\Hotel.Domain.csproj",
+              "ToolTip": "C:\\Users\\arjun.c\\source\\repos\\Hotel-CQRS\\Hotel.Domain\\Hotel.Domain.csproj",
+              "RelativeToolTip": "..\\Hotel.Domain\\Hotel.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-05T05:32:25.328Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

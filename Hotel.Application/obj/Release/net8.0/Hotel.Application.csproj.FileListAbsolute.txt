@@ -1,0 +1,5 @@
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Application\obj\Release\net8.0\Hotel.Application.csproj.AssemblyReference.cache
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Application\obj\Release\net8.0\Hotel.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Application\obj\Release\net8.0\Hotel.Application.AssemblyInfoInputs.cache
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Application\obj\Release\net8.0\Hotel.Application.AssemblyInfo.cs
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Application\obj\Release\net8.0\Hotel.Application.csproj.CoreCompileInputs.cache

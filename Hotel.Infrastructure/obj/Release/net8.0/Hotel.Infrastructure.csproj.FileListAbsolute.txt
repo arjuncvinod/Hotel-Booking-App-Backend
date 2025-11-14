@@ -1,0 +1,17 @@
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\bin\Release\net8.0\Hotel.Infrastructure.deps.json
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\bin\Release\net8.0\Hotel.Infrastructure.runtimeconfig.json
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\bin\Release\net8.0\Hotel.Infrastructure.dll
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\bin\Release\net8.0\Hotel.Infrastructure.pdb
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\bin\Release\net8.0\Hotel.Domain.dll
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\bin\Release\net8.0\Hotel.Domain.pdb
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Release\net8.0\Hotel.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Release\net8.0\Hotel.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Release\net8.0\Hotel.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Release\net8.0\Hotel.Infrastructure.AssemblyInfo.cs
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Release\net8.0\Hotel.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Release\net8.0\Hotel.In.3ECE7436.Up2Date
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Release\net8.0\Hotel.Infrastructure.dll
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Release\net8.0\refint\Hotel.Infrastructure.dll
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Release\net8.0\Hotel.Infrastructure.pdb
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Release\net8.0\Hotel.Infrastructure.genruntimeconfig.cache
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Release\net8.0\ref\Hotel.Infrastructure.dll

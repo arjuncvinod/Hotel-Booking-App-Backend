@@ -1,0 +1,11 @@
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Domain\bin\Debug\net8.0\Hotel.Domain.deps.json
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Domain\bin\Debug\net8.0\Hotel.Domain.dll
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Domain\bin\Debug\net8.0\Hotel.Domain.pdb
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Domain\obj\Debug\net8.0\Hotel.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Domain\obj\Debug\net8.0\Hotel.Domain.AssemblyInfoInputs.cache
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Domain\obj\Debug\net8.0\Hotel.Domain.AssemblyInfo.cs
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Domain\obj\Debug\net8.0\Hotel.Domain.csproj.CoreCompileInputs.cache
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Domain\obj\Debug\net8.0\Hotel.Domain.dll
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Domain\obj\Debug\net8.0\refint\Hotel.Domain.dll
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Domain\obj\Debug\net8.0\Hotel.Domain.pdb
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Domain\obj\Debug\net8.0\ref\Hotel.Domain.dll
