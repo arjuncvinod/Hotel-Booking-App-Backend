@@ -21,7 +21,7 @@ namespace Hotel.Application.Employee.Queries.GetEmployeeById
 
         public async Task<EmployeeDto> Handle(GetEmployeeByIdQuery request, CancellationToken cancellationToken)
         {
-            Domain.Entities.Employee? employee = await _context.Employees.FirstOrDefaultAsync(cancellationToken);
+            Domain.Entities.Employee? employee = await _context.Employees.FirstOrDefaultAsync(x=>x.Id==request.Id);
 
             if (employee == null) {
 
@@ -34,7 +34,7 @@ namespace Hotel.Application.Employee.Queries.GetEmployeeById
                 FullName = employee.FullName,
                 Role = employee.Role,
                 Email = employee.Email,
-                HotelId = employee.Id,
+                HotelId = employee.HotelId,
             };
         }
     }

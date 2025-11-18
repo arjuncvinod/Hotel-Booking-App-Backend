@@ -8,22 +8,22 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
+        "Name": "cmd",
         "Type": "Hotel.Application.Auth.LoginCommand",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "Hotel.Application.Auth.AuthResult",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hotel.API.Controllers.AuthController",
+    "Method": "Logout",
+    "RelativePath": "api/auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Hotel.API.Controllers.AuthController",
@@ -32,39 +32,7 @@
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "command",
-        "Type": "Application.Auth.RefreshCommand",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Hotel.Application.Auth.AuthResult",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Hotel.API.Controllers.AuthController",
-    "Method": "Revoke",
-    "RelativePath": "api/auth/revoke",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "Hotel.Application.Auth.RevokeRequest",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -185,6 +153,32 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hotel.API.Controllers.BookingController",
+    "Method": "GetByCustomer",
+    "RelativePath": "api/Booking/customer/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Hotel.Application.DTOs.BookingDto, Hotel.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "Hotel.API.Controllers.CustomerController",
@@ -618,6 +612,48 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Hotel.API.Controllers.PaymentController",
+    "Method": "Create",
+    "RelativePath": "api/Payment/create-order",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Hotel.Application.Payment.Commands.CreateOrder.CreateOrderCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Hotel.Application.Payment.Commands.CreateOrder.CreateOrderResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Hotel.API.Controllers.PaymentController",
+    "Method": "VerifyPayment",
+    "RelativePath": "api/Payment/verify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cmd",
+        "Type": "Hotel.Application.Payment.Commands.VerifyPayment.VerifyPaymentCommand",
         "IsRequired": true
       }
     ],

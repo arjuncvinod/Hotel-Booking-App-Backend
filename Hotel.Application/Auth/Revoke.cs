@@ -2,27 +2,22 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hotel.Application.Auth;
-
-public record RevokeRequest(string RefreshToken);
-
-public record RevokeCommand(string RefreshToken) : IRequest;
-
-public class RevokeHandler : IRequestHandler<RevokeCommand>
+namespace Hotel.Application.Auth
 {
-    private readonly HotelDbContext _db;
+    public record RevokeCommand(int UserId, string UserType) : IRequest;
 
-    public RevokeHandler(HotelDbContext db) => _db = db;
-
-    public async Task Handle(RevokeCommand command, CancellationToken ct)
+    public class RevokeHandler : IRequestHandler<RevokeCommand>
     {
-        var user = await _db.Employees
-            .FirstOrDefaultAsync(e => e.RefreshToken == command.RefreshToken, ct);
+        private readonly HotelDbContext _db;
+        public RevokeHandler(HotelDbContext db) => _db = db;
 
-        if (user != null)
+        public async Task Handle(RevokeCommand cmd, CancellationToken ct)
         {
-            user.RefreshToken = null;
-            user.RefreshTokenExpiry = null;
+            var tokens = await _db.RefreshTokens
+                .Where(t => t.UserId == cmd.UserId && t.UserType == cmd.UserType && !t.Revoked)
+                .ToListAsync(ct);
+
+            foreach (var t in tokens) t.Revoked = true;
             await _db.SaveChangesAsync(ct);
         }
     }

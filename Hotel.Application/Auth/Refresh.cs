@@ -1,95 +1,90 @@
-﻿
-using Hotel.Application.Auth;
-using Hotel.Domain.Entities;
+﻿using Hotel.Domain.Entities;
 using Hotel.Infrastructure.Data;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Application.Auth;
-
-public record RefreshCommand(string AccessToken, string RefreshToken) : IRequest<AuthResult>;
-
-public class RefreshHandler : IRequestHandler<RefreshCommand, AuthResult>
+namespace Hotel.Application.Auth
 {
-    private readonly HotelDbContext _db;
-    private readonly IConfiguration _config;
+    public record RefreshCommand(string RefreshToken) : IRequest<AuthResult>;
 
-    public RefreshHandler(HotelDbContext db, IConfiguration config)
+    public class RefreshHandler : IRequestHandler<RefreshCommand, AuthResult>
     {
-        _db = db;
-        _config = config;
-    }
+        private readonly HotelDbContext _db;
+        private readonly IConfiguration _config;
 
-    public async Task<AuthResult> Handle(RefreshCommand command, CancellationToken ct)
-    {
-        var principal = GetPrincipalFromExpiredToken(command.AccessToken);
-        var userId = int.Parse(principal.FindFirst(ClaimTypes.NameIdentifier)!.Value);
-
-        var user = await _db.Employees.FindAsync(new object[] { userId }, ct);
-        if (user == null ||
-            user.RefreshToken != command.RefreshToken ||
-            user.RefreshTokenExpiry <= DateTime.UtcNow)
-            throw new SecurityTokenException("Invalid refresh token");
-
-        var newAccessToken = GenerateAccessToken(user);
-        var newRefreshToken = GenerateRefreshToken();
-
-        user.RefreshToken = newRefreshToken;
-        user.RefreshTokenExpiry = DateTime.UtcNow.AddDays(7);
-        await _db.SaveChangesAsync(ct);
-
-        return new AuthResult(newAccessToken, newRefreshToken);
-    }
-
-    private ClaimsPrincipal GetPrincipalFromExpiredToken(string token)
-    {
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]!));
-        var validation = new TokenValidationParameters
+        public RefreshHandler(HotelDbContext db, IConfiguration config)
         {
-            ValidateLifetime = false,
-            ValidateIssuerSigningKey = true,
-            IssuerSigningKey = key,
-            ValidateIssuer = false,
-            ValidateAudience = false
-        };
+            _db = db;
+            _config = config;
+        }
 
-        var handler = new JwtSecurityTokenHandler();
-        var principal = handler.ValidateToken(token, validation, out _);
-        return principal;
-    }
-
-    private string GenerateAccessToken(Employee user)
-    {
-        var claims = new[]
+        public async Task<AuthResult> Handle(RefreshCommand cmd, CancellationToken ct)
         {
-            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-            new Claim(ClaimTypes.Email, user.Email),
-            new Claim(ClaimTypes.Role, user.Role)
-        };
+            var rt = await _db.RefreshTokens
+                .FirstOrDefaultAsync(t => t.Token == cmd.RefreshToken && !t.Revoked && t.Expiry > DateTime.UtcNow, ct);
 
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]!));
-        var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            if (rt == null) throw new SecurityTokenException("Invalid refresh token");
 
-        var jwt = new JwtSecurityToken(
-            issuer: _config["Jwt:Issuer"],
-            audience: _config["Jwt:Audience"],
-            claims: claims,
-            expires: DateTime.UtcNow.AddMinutes(15),
-            signingCredentials: creds);
+            rt.Revoked = true;
 
-        return new JwtSecurityTokenHandler().WriteToken(jwt);
-    }
+            var userInfo = rt.UserType == "Employee"
+         ? await _db.Employees
+             .Where(e => e.Id == rt.UserId)
+             .Select(e => new { Email = e.Email, Role = "Admin" })
+             .FirstAsync(ct)
+         : await _db.Customers
+             .Where(c => c.Id == rt.UserId)
+             .Select(c => new { Email = c.Email, Role = "Customer" })
+             .FirstAsync(ct);
 
-    private string GenerateRefreshToken()
-    {
-        var random = new byte[64];
-        RandomNumberGenerator.Fill(random);
-        return Convert.ToBase64String(random);
+            var newAccess = GenerateAccessToken(rt.UserId, userInfo.Email, userInfo.Role);
+            var newRefresh = GenerateRefreshToken();
+
+            _db.RefreshTokens.Add(new RefreshToken
+            {
+                Token = newRefresh,
+                Expiry = DateTime.UtcNow.AddDays(7),
+                UserType = rt.UserType,
+                UserId = rt.UserId,
+                CreatedAt = DateTime.UtcNow,
+                ReplacedById = rt.Id
+            });
+
+            await _db.SaveChangesAsync(ct);
+            return new AuthResult(newAccess, newRefresh);
+        }
+
+        private string GenerateAccessToken(int id, string email, string role)
+        {
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.NameIdentifier, id.ToString()),
+                new Claim(ClaimTypes.Email, email),
+                new Claim("role", role)
+            };
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]!));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                issuer: _config["Jwt:Issuer"],
+                audience: _config["Jwt:Audience"],
+                claims: claims,
+                expires: DateTime.UtcNow.AddMinutes(15),
+                signingCredentials: creds);
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        private string GenerateRefreshToken()
+        {
+            return Convert.ToBase64String(RandomNumberGenerator.GetBytes(64));
+        }
     }
 }

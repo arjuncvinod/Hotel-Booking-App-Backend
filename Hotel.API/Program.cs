@@ -1,7 +1,9 @@
 using Hotel.API.Middlewares;
 using Hotel.Domain.Entities;
 using Hotel.Infrastructure.Data;
+using Hotel.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Reflection;
@@ -19,18 +21,22 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddMediatR(x =>
     x.RegisterServicesFromAssembly(Assembly.Load("Hotel.Application")));
 
+
+
 builder.Services.AddDbContext<HotelDbContext>();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll",
-        policy =>
-        {
-            policy
-                .AllowAnyOrigin()
-                .AllowAnyMethod()
-                .AllowAnyHeader();
-        });
+    options.AddPolicy("AllowTest", policy =>
+    {
+        policy.WithOrigins(
+                "http://localhost:4200",
+                "https://localhost:4200"
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
+    });
 });
 
 builder.Services.AddAuthentication("Bearer")
@@ -45,31 +51,49 @@ builder.Services.AddAuthentication("Bearer")
             ValidateIssuerSigningKey = true,
             ValidIssuer = jwt["Issuer"],
             ValidAudience = jwt["Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(jwt["Key"]!))
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt["Key"]!))
         };
     });
 
-
+builder.Services.AddScoped<RazorpayService>();
 
 
 var app = builder.Build();
 
 
 
-//using var scope = app.Services.CreateScope();
-//var db = scope.ServiceProvider.GetRequiredService<HotelDbContext>();
-
-//var hash = BCrypt.Net.BCrypt.HashPassword("Admin123");
-//db.Employees.Add(new Employee
+//using (var scope = app.Services.CreateScope())
 //{
-//    HotelId = 1,
-//    FullName = "Admin",
-//    Role = "Admin",
-//    Email = "admin@gmail.com",
-//    PasswordHash = hash
-//});
-//await db.SaveChangesAsync();
+//    var db = scope.ServiceProvider.GetRequiredService<HotelDbContext>();
+//    db.Database.Migrate(); // Ensure latest migration
+
+//    if (!db.Employees.Any(e => e.Email == "admin@gmail.com"))
+//    {
+//        var hash = BCrypt.Net.BCrypt.HashPassword("Admin123", 12);
+//        db.Employees.Add(new Employee
+//        {
+//            HotelId = 1,
+//            FullName = "Admin",
+//            Role = "Admin",
+//            Email = "admin@gmail.com",
+//            PasswordHash = hash
+//        });
+//    }
+
+//    if (!db.Customers.Any(c => c.Email == "arjun@gmail.com"))
+//    {
+//        var hash = BCrypt.Net.BCrypt.HashPassword("arjun123", 12);
+//        db.Customers.Add(new Customer
+//        {
+//            FullName = "Arjun",
+//            Email = "arjun@gmail.com",
+//            PhoneNumber = "1234567890",
+//            IdproofNumber = "ID123",
+//            PasswordHash = hash
+//        });
+//    }
+//    await db.SaveChangesAsync();
+////}
 
 
 
@@ -79,11 +103,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseCors("AllowAll");
+app.UseHttpsRedirection();
+
+app.UseCors("AllowTest");
 
 app.UseMiddleware<GlobalExceptionMiddleware>();
-
-app.UseHttpsRedirection();
 
 app.UseAuthentication();
 

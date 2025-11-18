@@ -145,6 +145,10 @@ C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.API\obj\Debug\net8.0\Hotel.API.ge
 C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.API\obj\Debug\net8.0\ref\Hotel.API.dll
 C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.API\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.API\obj\Debug\net8.0\Hotel.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.API\obj\Debug\net8.0\Hotel.API.sourcelink.json
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.API\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.API\bin\Debug\net8.0\BouncyCastle.Crypto.dll
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.API\bin\Debug\net8.0\Razorpay.dll
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

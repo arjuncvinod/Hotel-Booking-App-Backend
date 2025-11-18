@@ -15,3 +15,4 @@ C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Debug\net8.0\r
 C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Debug\net8.0\Hotel.Infrastructure.pdb
 C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Debug\net8.0\Hotel.Infrastructure.genruntimeconfig.cache
 C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Debug\net8.0\ref\Hotel.Infrastructure.dll
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\obj\Debug\net8.0\Hotel.Infrastructure.sourcelink.json

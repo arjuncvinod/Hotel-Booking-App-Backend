@@ -19,6 +19,9 @@ namespace Hotel.Domain.Entities
 
         public string IdproofNumber { get; set; }
 
+        public string PasswordHash { get; set; } = null!;
+
         public List<Booking> Bookings { get; set; } = new List<Booking>();
+
     }
 }

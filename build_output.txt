@@ -1,0 +1,12 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Hotel.Domain -> C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Domain\bin\Debug\net8.0\Hotel.Domain.dll
+  Hotel.Infrastructure -> C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Infrastructure\bin\Debug\net8.0\Hotel.Infrastructure.dll
+  Hotel.Application -> C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Application\bin\Debug\net8.0\Hotel.Application.dll
+  Hotel.API -> C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.API\bin\Debug\net8.0\Hotel.API.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.18

@@ -15,3 +15,4 @@ C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Application\obj\Debug\net8.0\Hote
 C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Application\obj\Debug\net8.0\refint\Hotel.Application.dll
 C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Application\obj\Debug\net8.0\Hotel.Application.pdb
 C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Application\obj\Debug\net8.0\ref\Hotel.Application.dll
+C:\Users\arjun.c\source\repos\Hotel-CQRS\Hotel.Application\obj\Debug\net8.0\Hotel.Application.sourcelink.json

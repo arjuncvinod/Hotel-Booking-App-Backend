@@ -1,7 +1,9 @@
 using Hotel.Application.DTOs;
+using Hotel.Application.Payment.Commands.CreateOrder;
 using Hotel.Application.Payment.Commands.CreatePayment;
 using Hotel.Application.Payment.Commands.DeletePayment;
 using Hotel.Application.Payment.Commands.UpdatePayment;
+using Hotel.Application.Payment.Commands.VerifyPayment;
 using Hotel.Application.Payment.Queries.GetPaymentById;
 using Hotel.Application.Payment.Queries.GetPayments;
 using MediatR;
@@ -60,5 +62,22 @@ namespace Hotel.API.Controllers
             var result = await _mediator.Send(command);
             return Ok("Payment Deleted");
         }
+
+
+        [HttpPost("create-order")]
+        public async Task<ActionResult<CreateOrderResponse>> Create([FromBody] CreateOrderCommand cmd)
+        => Ok(await _mediator.Send(cmd));
+
+        [HttpPost("verify")]
+        public async Task<IActionResult> VerifyPayment([FromBody] VerifyPaymentCommand cmd)
+        {
+            bool success = await _mediator.Send(cmd);
+
+            return success
+                ? Ok(new { success = true, message = "Payment verified and booking confirmed" })
+                : BadRequest(new { success = false, message = "Invalid payment signature" });
+        }
+
+
     }
 }

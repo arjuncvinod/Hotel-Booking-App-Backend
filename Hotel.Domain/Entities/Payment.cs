@@ -16,5 +16,10 @@ namespace Hotel.Domain.Entities
         public PaymentMethod Method { get; set; }
         public PaymentStatus Status { get; set; }
         public Booking Booking { get; set; }
+
+
+        public string? RazorpayOrderId { get; set; }   
+        public string? RazorpayPaymentId { get; set; }  
+        public string? RazorpaySignature { get; set; }
     }
 }

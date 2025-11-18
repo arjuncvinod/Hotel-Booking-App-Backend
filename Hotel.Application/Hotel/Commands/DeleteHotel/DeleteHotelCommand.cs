@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hotel.Application.Hotel.DeleteHotel
+namespace Hotel.Application.Hotel.Commands.DeleteHotel
 {
     public class DeleteHotelCommand:IRequest<bool>
     {

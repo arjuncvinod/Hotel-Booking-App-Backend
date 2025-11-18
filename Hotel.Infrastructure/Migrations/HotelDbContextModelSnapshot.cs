@@ -77,6 +77,10 @@ namespace Hotel.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -108,12 +112,6 @@ namespace Hotel.Infrastructure.Migrations
                     b.Property<string>("PasswordHash")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("RefreshToken")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("RefreshTokenExpiry")
-                        .HasColumnType("datetime2");
 
                     b.Property<string>("Role")
                         .IsRequired()
@@ -182,6 +180,15 @@ namespace Hotel.Infrastructure.Migrations
                     b.Property<DateTime>("PaymentDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("RazorpayOrderId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RazorpayPaymentId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RazorpaySignature")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
@@ -191,6 +198,53 @@ namespace Hotel.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("Payments");
+                });
+
+            modelBuilder.Entity("Hotel.Domain.Entities.RefreshToken", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("SYSUTCDATETIME()");
+
+                    b.Property<DateTime>("Expiry")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("ReplacedById")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Revoked")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
+                    b.Property<string>("Token")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserType")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Token")
+                        .IsUnique();
+
+                    b.HasIndex("UserType", "UserId");
+
+                    b.ToTable("RefreshTokens", (string)null);
                 });
 
             modelBuilder.Entity("Hotel.Domain.Entities.Review", b =>

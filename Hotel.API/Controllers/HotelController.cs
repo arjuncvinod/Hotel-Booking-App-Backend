@@ -1,7 +1,7 @@
 ﻿using Hotel.Application.DTOs;
 using Hotel.Application.Hotel.Commands.CreateHotel;
 using Hotel.Application.Hotel.Commands.UpdateHotel;
-using Hotel.Application.Hotel.DeleteHotel;
+using Hotel.Application.Hotel.Commands.DeleteHotel;
 using Hotel.Application.Hotel.Queries.GetAvailableRooms;
 using Hotel.Application.Hotel.Queries.GetCustomers;
 using Hotel.Application.Hotel.Queries.GetHotelById;
@@ -66,24 +66,24 @@ namespace Hotel.API.Controllers
         public async Task<ActionResult> UpdateHotel(int id, UpdateHotelCommand command)
         {
             command.Id = id;
-            return Ok(await  _mediator.Send(command));
+            return Ok(await _mediator.Send(command));
         }
 
 
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteHotel(int id)
         {
-                var command = new DeleteHotelCommand();
-                command.Id = id;
+            var command = new DeleteHotelCommand();
+            command.Id = id;
 
-                bool result = await _mediator.Send(command);
+            bool result = await _mediator.Send(command);
 
-                return result ? Ok("User Deleted") : NotFound();
+            return result ? Ok(true) : NotFound();
         }
 
 
 
-        [HttpGet("available-rooms")] 
+        [HttpGet("available-rooms")]
         public async Task<ActionResult<List<AvailableRoomsDto>>> GetAvailableRooms(
     [FromQuery] DateTime checkInDate,
     [FromQuery] DateTime checkOutDate,
@@ -106,7 +106,7 @@ namespace Hotel.API.Controllers
 
             var result = await _mediator.Send(query);
 
-            return Ok(result); 
+            return Ok(result);
         }
 
 

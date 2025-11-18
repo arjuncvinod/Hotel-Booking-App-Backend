@@ -31,24 +31,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/AuthResult"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/AuthResult"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/AuthResult"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
@@ -58,73 +41,18 @@
         "tags": [
           "Auth"
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RefreshCommand"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RefreshCommand"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/RefreshCommand"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/AuthResult"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/AuthResult"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/AuthResult"
-                }
-              }
-            }
+            "description": "OK"
           }
         }
       }
     },
-    "/api/auth/revoke": {
+    "/api/auth/logout": {
       "post": {
         "tags": [
           "Auth"
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RevokeRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RevokeRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/RevokeRequest"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"
@@ -330,6 +258,55 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Booking/customer/{id}": {
+      "get": {
+        "tags": [
+          "Booking"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BookingDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BookingDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BookingDto"
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -1057,6 +1034,85 @@
         }
       }
     },
+    "/api/Payment/create-order": {
+      "post": {
+        "tags": [
+          "Payment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrderCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrderCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrderCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateOrderResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateOrderResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreateOrderResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Payment/verify": {
+      "post": {
+        "tags": [
+          "Payment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VerifyPaymentCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VerifyPaymentCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VerifyPaymentCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Review": {
       "get": {
         "tags": [
@@ -1666,20 +1722,6 @@
   },
   "components": {
     "schemas": {
-      "AuthResult": {
-        "type": "object",
-        "properties": {
-          "accessToken": {
-            "type": "string",
-            "nullable": true
-          },
-          "refreshToken": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "AvailableRoomsDto": {
         "type": "object",
         "properties": {
@@ -1872,6 +1914,50 @@
         },
         "additionalProperties": false
       },
+      "CreateOrderCommand": {
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "receipt": {
+            "type": "string",
+            "nullable": true
+          },
+          "bookingId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateOrderResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "amountInPaise": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "currency": {
+            "type": "string",
+            "nullable": true
+          },
+          "receipt": {
+            "type": "string",
+            "nullable": true
+          },
+          "keyId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CreatePaymentCommand": {
         "type": "object",
         "properties": {
@@ -2052,20 +2138,6 @@
         "type": "integer",
         "format": "int32"
       },
-      "RefreshCommand": {
-        "type": "object",
-        "properties": {
-          "accessToken": {
-            "type": "string",
-            "nullable": true
-          },
-          "refreshToken": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "ReviewDto": {
         "type": "object",
         "properties": {
@@ -2092,16 +2164,6 @@
           "reviewDate": {
             "type": "string",
             "format": "date-time"
-          }
-        },
-        "additionalProperties": false
-      },
-      "RevokeRequest": {
-        "type": "object",
-        "properties": {
-          "refreshToken": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -2354,6 +2416,24 @@
           "capacity": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VerifyPaymentCommand": {
+        "type": "object",
+        "properties": {
+          "razorpayOrderId": {
+            "type": "string",
+            "nullable": true
+          },
+          "razorpayPaymentId": {
+            "type": "string",
+            "nullable": true
+          },
+          "razorpaySignature": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

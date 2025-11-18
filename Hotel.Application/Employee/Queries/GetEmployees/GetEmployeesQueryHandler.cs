@@ -30,7 +30,7 @@ namespace Hotel.Application.Employee.Queries.GetEmployees
                 var employeeDto = new EmployeeDto
                 {
                     Id = employee.Id,
-                    HotelId = employee.Id,
+                    HotelId = employee.HotelId,
                     FullName = employee.FullName,
                     Role   = employee.Role,
                     Email = employee.Email,  

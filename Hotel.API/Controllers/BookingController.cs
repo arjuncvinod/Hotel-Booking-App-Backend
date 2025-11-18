@@ -1,6 +1,7 @@
 using Hotel.Application.Booking.Commands.CreateBooking;
 using Hotel.Application.Booking.Commands.DeleteBooking;
 using Hotel.Application.Booking.Commands.UpdateBooking;
+using Hotel.Application.Booking.Queries.GetBookingByCustomer;
 using Hotel.Application.Booking.Queries.GetBookingById;
 using Hotel.Application.Booking.Queries.GetBookings;
 using Hotel.Application.DTOs;
@@ -59,6 +60,18 @@ namespace Hotel.API.Controllers
             command.Id = id;
             var result = await _mediator.Send(command);
             return Ok("Booking Deleted");
+        }
+
+
+        [HttpGet("customer/{id}")]
+        public async Task<ActionResult<List<BookingDto>>> GetByCustomer(int id)
+        {
+            var query = new GetBookingByCustomerQuery();
+            query.Id = id;
+
+            var result = await _mediator.Send(query);
+
+            return result is not null ? Ok(result) : NotFound();
         }
     }
 }

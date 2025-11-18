@@ -1,42 +1,50 @@
-﻿    using Application.Auth;
-    using Hotel.Application.Auth;
-    using MediatR;
-    using Microsoft.AspNetCore.Mvc;
+﻿using Hotel.Application.Auth;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
-    namespace Hotel.API.Controllers
+namespace Hotel.API.Controllers
+{
+    [ApiController]
+    [Route("api/auth")]
+    public class AuthController : ControllerBase
     {
-        [ApiController]
-        [Route("api/auth")]
+        private readonly IMediator _mediator;
+        public AuthController(IMediator mediator) => _mediator = mediator;
 
-        public class AuthController : ControllerBase
+        private static readonly CookieOptions RefreshCookieOptions = new()
         {
-            private readonly IMediator _mediator;
+            HttpOnly = true,
+            Secure = true,
+            SameSite = SameSiteMode.None,
+            Path = "/",
+            Expires = DateTimeOffset.UtcNow.AddDays(7)
+        };
 
-            public AuthController(IMediator mediator) => _mediator = mediator;
-
-            [HttpPost("login")]
-            public async Task<ActionResult<AuthResult>> Login([FromBody] LoginCommand command)
-            {
-
-                return Ok(await _mediator.Send(command));
-
-            }
-
-
-            [HttpPost("refresh")]
-            public async Task<ActionResult<AuthResult>> Refresh([FromBody] RefreshCommand command)
-            {
-                return Ok(await _mediator.Send(command));
-            }
-
-
-
-        [HttpPost("revoke")]
-        public async Task<IActionResult> Revoke([FromBody] RevokeRequest request)
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginCommand cmd)
         {
-            await _mediator.Send(new RevokeCommand(request.RefreshToken));
-            return NoContent();
+            var result = await _mediator.Send(cmd);
+            Response.Cookies.Append("refresh_token", result.RefreshToken, RefreshCookieOptions);
+            return Ok(new { accessToken = result.AccessToken });
         }
 
+        [HttpPost("refresh")]
+        public async Task<IActionResult> Refresh()
+        {
+            var refreshToken = Request.Cookies["refresh_token"];
+            if (string.IsNullOrEmpty(refreshToken))
+                return Unauthorized("Missing refresh token");
+
+            var result = await _mediator.Send(new RefreshCommand(refreshToken));
+            Response.Cookies.Append("refresh_token", result.RefreshToken, RefreshCookieOptions);
+            return Ok(new { accessToken = result.AccessToken });
+        }
+
+        [HttpPost("logout")]
+        public IActionResult Logout()
+        {
+            Response.Cookies.Delete("refresh_token", RefreshCookieOptions);
+            return Ok();
+        }
     }
-    }
+}

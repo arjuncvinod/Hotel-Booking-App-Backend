@@ -28,6 +28,8 @@ namespace Hotel.Infrastructure.Data
         public DbSet<Room> Rooms { get; set; }
         public DbSet<RoomType> RoomTypes { get; set; }
 
+        public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -35,6 +37,19 @@ namespace Hotel.Infrastructure.Data
             {
                 e.HasKey(x => x.Id);
                 e.HasIndex(x => x.Email).IsUnique();
+            });
+
+
+            modelBuilder.Entity<RefreshToken>(entity =>
+            {
+                entity.ToTable("RefreshTokens");
+                entity.HasKey(rt => rt.Id);
+                entity.Property(rt => rt.Token).HasMaxLength(256).IsRequired();
+                entity.Property(rt => rt.UserType).HasMaxLength(20).IsRequired();
+                entity.Property(rt => rt.CreatedAt).HasDefaultValueSql("SYSUTCDATETIME()");
+                entity.Property(rt => rt.Revoked).HasDefaultValue(false);
+                entity.HasIndex(rt => rt.Token).IsUnique();
+                entity.HasIndex(rt => new { rt.UserType, rt.UserId });
             });
         }
 
