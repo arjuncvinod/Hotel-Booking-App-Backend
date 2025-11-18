@@ -58,7 +58,7 @@ namespace Hotel.API.Controllers
             var command = new DeleteRoomTypeCommand();
             command.Id = id;
             var result = await _mediator.Send(command);
-            return Ok("RoomType Deleted");
+            return result ? Ok(true) : NotFound();
         }
     }
 }

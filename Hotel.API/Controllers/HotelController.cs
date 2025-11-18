@@ -62,6 +62,7 @@ namespace Hotel.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
 
         public async Task<ActionResult> UpdateHotel(int id, UpdateHotelCommand command)
         {
@@ -71,6 +72,7 @@ namespace Hotel.API.Controllers
 
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult> DeleteHotel(int id)
         {
             var command = new DeleteHotelCommand();

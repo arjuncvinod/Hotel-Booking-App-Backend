@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Hotel.Application.Room.Commands.DeleteRoom
 {
-    public class DeleteRoomCommand : IRequest<int>
+    public class DeleteRoomCommand : IRequest<bool>
     {
         public int Id { get; set; }
     }

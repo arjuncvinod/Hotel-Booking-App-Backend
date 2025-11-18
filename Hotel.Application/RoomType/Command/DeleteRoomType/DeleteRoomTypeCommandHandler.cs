@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Hotel.Application.RoomType.Command.DeleteRoomType
 {
-    public class DeleteRoomTypeCommandHandler : IRequestHandler<DeleteRoomTypeCommand, int>
+    public class DeleteRoomTypeCommandHandler : IRequestHandler<DeleteRoomTypeCommand, bool>
     {
         private readonly HotelDbContext _context;
 
@@ -18,7 +18,7 @@ namespace Hotel.Application.RoomType.Command.DeleteRoomType
             _context = context;
         }
 
-        public async Task<int> Handle(DeleteRoomTypeCommand request, CancellationToken ct)
+        public async Task<bool> Handle(DeleteRoomTypeCommand request, CancellationToken ct)
         {
             var roomType = await _context.RoomTypes.FirstOrDefaultAsync(rt => rt.Id == request.Id, ct);
 
@@ -28,7 +28,7 @@ namespace Hotel.Application.RoomType.Command.DeleteRoomType
             _context.RoomTypes.Remove(roomType);
             await _context.SaveChangesAsync(ct);
 
-            return 1;
+            return true;
         }
     }
 }

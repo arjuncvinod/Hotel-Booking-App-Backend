@@ -15,5 +15,7 @@ namespace Hotel.Application.DTOs
         public string City { get; set; }
         public string Country { get; set; }
         public string PhoneNumber { get; set; }
+
+        public List<RoomDto> Rooms { get; set; } = new List<RoomDto>();
     }
 }
